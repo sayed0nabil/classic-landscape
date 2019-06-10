@@ -1,0 +1,446 @@
+/* Start Main Rules*/
+*{
+    box-sizing: border-box;
+}
+.none{
+    display: none;
+}
+.center {
+    text-align: center;
+}
+.maincolor{
+    color: #1abc9c;
+}
+.white{
+    color: white;
+}
+.upper{
+    text-transform: uppercase;
+}
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .7;
+    z-index: 1;
+}
+/*End Main Rules*/
+/*Start Navbar*/
+.navbar{
+    padding-top: 20px;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    float: left;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    display: inline-block;
+/*    width: 150px;*/
+    height: 40px;
+    padding: 0 10px;
+/*    font-weight: bold;*/
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in-out .3s;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li:hover ,
+ul li.active{
+    color: #1abc9c;
+    padding-top: 4px;
+    border-bottom: 2px solid #1abc9c;   
+}
+ul li a:hover ,
+ul li  .active a{
+    color: #1abc9c;
+    
+}
+/*End Nav bar*/
+/*Start Header*/
+header{
+    height: 100%;
+    background: url(../images/headerback.jpg);
+    background-size: 100% 100%;
+}
+header .bx-wrapper{
+    border: none;
+    box-shadow: none;
+    background: none;
+    height: 100%;
+}
+header .bx-wrapper .bx-viewport{
+    height: 100% !important;
+    text-align: center;
+}
+header .slider {
+    height: 100%;
+}
+header .slider .maintitle{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*End Header*/
+/*Start ourservices*/
+.ourservices{
+    overflow: hidden;
+    padding-top: 20px;
+    border-bottom: 1px solid silver;
+}
+.container .headline{
+    font-size: 24px;
+    padding-bottom: 10px;
+    color: #2d2d2d;
+}
+.container .headlinespan{
+    border-bottom: 2px solid #2d2d2d;
+}
+.ourservices .container .c{
+    float: left;
+    width: 32%;
+    height: 50%;
+    margin-right: 1%;
+}
+
+.font{
+    float: left;
+    width:10%;
+    height: 100%;
+    margin-right: 10%;
+    font-size: 60px;
+    color: #1abc9c;
+    line-height: 1.5;
+}
+.ourservices .container .custom{
+    font-size: 50px;
+    line-height: 2;
+}
+.details {
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+.details p:first-child{
+    font-weight: bold;
+    color: #2d2d2d;
+}
+.details p:nth-child(2){
+    font-size: 12px;
+    color: #bababa;
+    
+}
+/*End ourservices*/
+/*Start ourteam*/
+.ourteam {
+    overflow: hidden;
+    padding: 30px 0 20px ;
+}
+.ourteam .container .section1{
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    color: silver;
+}
+.ourteam .pics{
+    width: 66%;
+    height: 70%;
+    float:left;
+    overflow: hidden;
+}
+.p1,.p2,.p3,.p4{
+    width:21%;
+    margin-right: 3%;
+    float:left;
+    cursor: pointer;
+    height: 100%;
+    transition: all ease-in-out .4s;
+    background-size: cover;
+}
+.ourteam .pics div .mainoverlay{
+    background: #1abc9c;
+    opacity: .8;
+    line-height: 10;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.ourteam .pics .p1{
+    background: url(../images/pic1.jpg);
+    background-size: cover;
+}
+.ourteam .pics .p2{
+    background: url("../images/pic2.jpg");
+    background-size: cover;
+}
+.ourteam .pics .p3{
+    background: url("../images/pic3.jpg");
+    background-size: cover;
+}
+.ourteam .pics .p4{
+    background: url("../images/pic4.jpg");
+    background-size: cover;
+}
+/*
+.ourteam .pics .p1:hover .mainoverlay ,
+.ourteam .pics .p2:hover .mainoverlay,
+.ourteam .pics .p3:hover .mainoverlay,
+.ourteam .pics .p4:hover .mainoverlay{
+    display:block;  
+}
+*/
+/*End ourteam*/
+/*Start client*/
+.client{
+    height: 500px;
+    background: url(../images/client.jpg);
+    background-position: 70% 100%;
+    background-size: 100% 176%;
+    display: table;
+    width: 100%;
+}
+.client .overlaywhite{
+    background: rgba(255,255,255,.2);
+    height: 100%;
+    color: #f5f5f6;
+    display: table-row;
+}
+.client .overlaywhite .container{
+    display: table-cell;
+    vertical-align: middle;
+}
+.client .overlaywhite .container .f{
+    font-size: 24px;
+}
+.client .overlaywhite .container p:nth-of-type(7){
+    font-weight: bold;
+}
+.client .overlaywhite .container p span{
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+.client .overlaywhite .customslider{
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    
+}
+.client .overlaywhite .customslider p {
+    display: none;   
+}
+.client .overlaywhite .customslider .active{
+    display: block;
+}
+/*End client*/
+/*Start projects*/
+.projects{
+    padding: 20px;
+    height: 700px;
+}
+.projects .container p{
+    font-size: 24px;
+    font-weight:200;
+    color: #2d2d2d;
+}
+.projects .container button{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+}
+.projects .container .active ,
+.projects .container button:hover{
+    background: #29bea1;
+    color: white;
+    border: none;
+}
+.projects .container .images{
+    margin-top: 50px;
+    height: 100%;
+}
+.projects .container .images > div{
+    float: left;
+    width: 32%;
+    margin: 0 1% 2% 0;
+    height: 30%;
+}
+.projects .container .images > div:first-child{
+    background: url(../images/p1.jpg);
+    background-size: cover;
+}
+.projects .container .images > div:nth-child(2){
+    background: url(../images/p2.jpg);
+    background-size: cover;
+}
+.projects .container .images > div:nth-child(3){
+    background: url(../images/p3.jpg);
+    background-size: cover;
+}
+.projects .container .images > div:nth-child(4){
+    background: url(../images/p4.jpg);
+    background-size: cover;
+}
+.projects .container .images > div:nth-child(5){
+    background: url(../images/p5.jpg);
+    background-size: cover;
+}
+.projects .container .images > div:nth-child(6){
+    background: url(../images/p6.jpg);
+    background-size: cover;
+}
+.projects .container .images .layimg{
+    background: #29bea1;
+    height: 100%;
+    opacity: .6;
+    padding: 20%;
+    transition: all ease-in-out .4s;
+}
+.projects .container .images > div:hover .layimg{
+    display: block;
+}
+.projects .container .images .layimg button{
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    background: transparent;
+    padding: 15px 10px;
+    border-radius: 0;  
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+.projects .container .images .layimg button:hover{
+    color: black;
+    border-color: black;
+}
+/*End projects*/
+/*Start Contact*/
+.contact{
+    height: 400px;
+    background: #232323;
+    overflow: hidden;
+}
+.contact .container{
+    padding-top: 40px;
+    color: #f5f5f5;
+}
+.contact .container > div{
+    width: 22%;
+    margin-right: 3%;
+    height: 100%;
+    float: left;
+}
+.contact .container > div h2{
+    font-weight: 400;
+}
+.contact .container .classic p{
+    color: #807d7d;
+}
+.contact .container .classic .logos{
+    margin-top: 30px;
+}
+.contact .container .classic svg{
+    width: 30px;
+    height: 30px;
+    color: #807d7d;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #807d7d;
+    cursor: pointer;
+}
+.contact .container .classic{
+    position: relative;
+}
+.contact .container .classic .copyright{
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+}
+.contact .container .tags .btns button{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px 10px 0;
+    color: #848484;
+    border: 1px solid #848484;
+    background: transparent;
+    cursor: pointer;
+}
+/*End Contact*/
+/*Start Recent*/
+.recent > div{
+    overflow: hidden;
+}
+.recent > div img{
+    display: inline-block;
+    float: left;
+    margin: 0 15px 10px 0;
+}
+.recent div div:nth-child(2){
+    display: inline-block;
+    float: left;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+.recent div div:last-child{
+    display: inline-block;
+    float: left;
+    color: #848484;
+}
+.blogs p{
+    color: #f5f5f5;
+    border-bottom: 1px solid #848484;
+    padding-bottom: 15px;
+}
+/*End Recent*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
