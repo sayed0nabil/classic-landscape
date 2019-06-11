@@ -1,13 +1,16 @@
 /* global $ , window , console*/
-$("html").niceScroll({
+
+
+$(document).ready(function(){
+    $('#content').show();
+    $('#loading').hide();
+    $("html").niceScroll({
         cursorcolor:"#1abc9c" ,
         cursorwidth:"10px" ,
         cursorborder:"1px solid white" ,
         cursorborderradius: 50 ,
         speed: 800
     });
-
-$(function(){
     var wh = $(window).height();
     $("header").height(wh);
     $(".ourservices").outerHeight(wh*.6);
@@ -15,7 +18,7 @@ $(function(){
     $("ul li").on("click",function(){
         $("ul li").removeClass("active");
         $(this).addClass("active");
-    });
+    }); 
     $(window).on("resize",function(){
         $(".slider").each(function(){
       $(this).css("paddingTop",(((wh-$(this).children().height())/2))); 
@@ -55,9 +58,9 @@ $(function(){
     $('.slider').bxSlider({
         pager: false
     });
-        $(".slider").each(function(){
-          $(this).css("paddingTop",(((wh-$(this).children().height())/2))); 
-        });
+    $(".slider").each(function(){
+        $(this).css("paddingTop",(((wh-$(this).children().height())/2))); 
+    });
     // Hover in our images
     $(".pics > div").on("mouseenter",function(){
         $(this).children(".mainoverlay").show(400);
@@ -88,6 +91,5 @@ $(function(){
             scrollTop: $($(this).attr('data-value')).offset().top
         },1000);
     });
-    
 });
 
